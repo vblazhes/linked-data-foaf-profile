@@ -1,0 +1,33 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/vblazhes/linked-data-foaf-profile/master/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/vblazhes/linked-data-foaf-profile/master/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/vblazhes/linked-data-foaf-profile/master/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/vblazhes/linked-data-foaf-profile/master/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Vladimir Blazheski" ;
+  foaf:givenname "Vladimir" ;
+  foaf:family_name "Blazheski" ;
+  foaf:nick "Vlade" ;
+  foaf:mbox_sha1sum "ed4599542f86a3437f9f6395d9bf99e412f1ffa8" ;
+  foaf:homepage <https://www.facebook.com/vladimir.blazeski1/> ;
+  foaf:workplaceHomepage <https://www.netcetera.com/home.html> ;
+  foaf:workInfoHomepage <https://en.wikipedia.org/wiki/Software_engineer> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Nikola Maroski" ;
+    foaf:mbox_sha1sum "bf8e59fec6c8f16f305555a95333ae2459d832d0" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/NikolaMaroski/foaf/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Kristijan Vlahov" ;
+    foaf:mbox_sha1sum "51a7256969bd276941de9c13ac82e39fde7e4516" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/kristijanvlahov/wbs/main/foaf.ttl>
+  ] .
